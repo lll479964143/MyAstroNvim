@@ -202,6 +202,7 @@ return {
     -- available after the first executing of it or after a keymap of text-case.nvim has been used.
     lazy = false,
   },
+  -- 生成代码片段截图 Virtual Mode
   {
     "TobinPalmer/rayso.nvim",
     config = function()
@@ -217,4 +218,32 @@ return {
       vim.keymap.set("v", "<leader>rs", require("lib.create").create_snippet)
     end,
   },
+  -- {
+  --   "Bryley/neoai.nvim",
+  --   dependencies = {
+  --     "MunifTanjim/nui.nvim",
+  --   },
+  --   cmd = {
+  --     "NeoAI",
+  --     "NeoAIOpen",
+  --     "NeoAIClose",
+  --     "NeoAIToggle",
+  --     "NeoAIContext",
+  --     "NeoAIContextOpen",
+  --     "NeoAIContextClose",
+  --     "NeoAIInject",
+  --     "NeoAIInjectCode",
+  --     "NeoAIInjectContext",
+  --     "NeoAIInjectContextCode",
+  --   },
+  --   keys = {
+  --     { "<leader>as", desc = "summarize text" },
+  --     { "<leader>ag", desc = "generate git message" },
+  --   },
+  --   config = function()
+  --     require("neoai").setup({
+  --       -- Options go here
+  --     })
+  --   end,
+  -- },
 }
